@@ -1,0 +1,112 @@
+.Home {
+  width: 100vw;
+  height: auto;
+  padding: 50px 100px;
+  background-image: url("../images/background-home.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.btn-log-out {
+  width: 110px;
+  padding: 10px 20px;
+  background: #530D40;
+  font-size: 1.6rem;
+  color: #a07193;
+  border-radius: 10px;
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  text-decoration: none;
+  text-align: center;
+  transition: 300ms ease-in-out all;
+}
+.btn-log-out:hover {
+  background: #3f0830;
+}
+.btn-comunity {
+  width: 110px;
+  padding: 10px 0;
+  background: #530D40;
+  font-size: 1.6rem;
+  color: #a07193;
+  border-radius: 10px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  text-decoration: none;
+  text-align: center;
+  transition: 300ms ease-in-out all;
+}
+.btn-comunity:hover {
+  background: #3f0830;
+}
+.Home h1 {
+  width: 100%;
+  margin: 0;
+  padding: 50px 0 100px 0;
+  font-size: 3rem;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  font-size: 3.8rem;
+  z-index: 2;
+}
+.pizza-icon {
+  position: absolute;
+  font-size: 170px;
+  color: #770077;
+}
+.Home h3 {
+  width: 100%;
+  margin-bottom: 50px;
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+}
+.Home-container-pizza {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  place-items: center;
+  gap: 20px;
+}
+
+@media (max-width: 939px) {
+  .Home-container-pizza {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 719px) {
+  .Home-container-pizza {
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  }
+}
+@media (max-width: 679px) {
+  .Home {
+    width: 100vw;
+    padding: 50px 20px;
+  }
+  .Home-container-pizza {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .Home {
+    width: 100%;
+    padding: 100px 20px 50px 20px;
+  }
+  .btn-log-out {
+  top: 20px;
+  right: 20px;
+  }
+  .btn-comunity {
+    top: 20px;
+    left: 20px;
+  }
+}
