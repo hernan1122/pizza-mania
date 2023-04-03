@@ -1,12 +1,12 @@
 .Home {
-  width: 100vw;
+  width: 98vw;
   height: auto;
   padding: 50px 100px;
-  background-image: url("../images/background-home.svg");
+  /* background-image: url("../images/background-home.svg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: fixed; */
 }
 .btn-log-out {
   width: 110px;

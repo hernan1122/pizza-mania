@@ -1,0 +1,72 @@
+.Comunity {
+  width: 98vw;
+  height: auto;
+  padding: 50px 100px;
+  /* background-image: url("../images/background-home.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; */
+  display: flex;
+  flex-direction: column;align-items: center;
+}
+.btn-home {
+  width: 110px;
+  padding: 10px 0;
+  background: #530D40;
+  font-size: 1.6rem;
+  color: #a07193;
+  border-radius: 10px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  text-decoration: none;
+  text-align: center;
+  transition: 300ms ease-in-out all;
+}
+.btn-home:hover {
+  background: #3f0830;
+}
+.Comunity h1 {
+  width: 100%;
+  margin: 0;
+  padding: 50px 0 100px 0;
+  font-size: 3rem;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  font-size: 3.8rem;
+  z-index: 2;
+}
+.pizza-icon {
+  position: absolute;
+  font-size: 170px;
+  color: #770077;
+}
+table {
+  width: 600px;
+  background-color: transparent;
+}
+thead {
+  background: transparent;
+  font-size: 2rem;
+  color: #a07193;
+  border: 1px solid #3f0830;
+}
+thead th {
+  width: 50%;
+  padding: 20px 0;
+  border: 2px solid #310425;
+  border-radius: 14px;
+}
+tbody td{
+  padding: 8px 0;
+  font-size: 1.8rem;
+  color: #a07193;
+  border: 2px solid #310425;
+  border-radius: 14px;
+  text-align: center;
+}

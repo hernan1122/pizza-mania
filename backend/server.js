@@ -47,6 +47,28 @@ app.post('/login', (req, res) => {
   })
 })
 
+app.get('/comunity', (req, res) => {
+  const sql = " SELECT name, lastname FROM account";
+
+  db.query(sql, (err, data) => {
+    if (err) {
+      return res.json({ error: err });
+    }
+
+    if (data.length) {
+      const communityData = data.map(item => {
+        return {
+          name: item.name,
+          lastname: item.lastname
+        }
+      });
+      return res.json({ data: communityData });
+    } else {
+      return res.json({ error: "No hay datos disponibles" });
+    }
+  })
+})
+
 app.listen(8081, () => {
   console.log('listening connection, axel');
 })
